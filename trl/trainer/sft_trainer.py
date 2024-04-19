@@ -152,6 +152,7 @@ class SFTTrainer(Trainer):
         dataset_kwargs: Optional[Dict] = None,
         eval_packing: Optional[bool] = None,
     ):
+        print("USING CUSTOM SFT TRAINER")
         if model_init_kwargs is None:
             model_init_kwargs = {}
         elif not isinstance(model, str):
